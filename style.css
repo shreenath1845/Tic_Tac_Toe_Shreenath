@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0fdfc;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #00a8e8;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.game-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.game-container h3 {
+  color: #00a8e8;
+  font-size: 1.3rem;
+}
+
+#status {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #444;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cell {
+  background-color: #f8f9fa;
+  border: 2px solid #d4edfa;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d4f1f9;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b0e6f5;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer .links a {
+  margin: 0 10px;
+  color: #00a8e8;
+  text-decoration: none;
+}
+
+footer .links a:hover {
+  text-decoration: underline;
+}
+.cell.x {
+    color: #007bff; /* Blue for X */
+}
+
+.cell.o {
+    color: #ff3b3f; /* Red for O */
+}
